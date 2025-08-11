@@ -20,7 +20,7 @@ class Food {
   } 
 
   //コンストラクタを定義する
-  public function __construct(string $name, int price) {
+  public function __construct(string $name, int $price) {
     $this->name = $name;
     $this->price = $price;
   }
@@ -58,9 +58,11 @@ $animal = new Animal('dog', 60, 5000);
 
 //メソッドにアクセスしメソッドを実行する
 echo '<br>';
+print_r($food);
 $food->show_price();
 
 echo  '<br>';
+print_r($animal);
 $animal->show_height();
 ?>
 </body>
